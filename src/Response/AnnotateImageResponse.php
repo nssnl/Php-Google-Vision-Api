@@ -39,6 +39,11 @@ class AnnotateImageResponse
     protected $textAnnotations = [];
 
     /**
+     * @var EntityAnnotation[]
+     */
+    protected $objectAnnotations = [];    
+    
+    /**
      * @var TextAnnotation
      */
     protected $fullTextAnnotation;
@@ -150,6 +155,23 @@ class AnnotateImageResponse
         $this->textAnnotations = $textAnnotations;
     }
 
+     /**
+     * @return EntityAnnotation[]
+     */
+    public function getObjectAnnotations()
+    {
+        return $this->objectAnnotations;
+    }
+
+    /**
+     * @param EntityAnnotation[] $logoAnnotations
+     */
+    public function setObjectAnnotations($objectAnnotations)
+    {
+        $this->objectAnnotations = $objectAnnotations;
+    }
+    
+    
     /**
      * @return TextAnnotation
      */
