@@ -20,6 +20,7 @@ class AnnotateImageHydrator implements HydratorInterface
      */
     protected $annotationClassMap = [
         'logoAnnotations' => EntityAnnotation::class,
+        'objectAnnotations' => EntityAnnotation::class,
         'labelAnnotations' => EntityAnnotation::class,
         'textAnnotations' => EntityAnnotation::class,
         'landmarkAnnotations' => EntityAnnotation::class,
@@ -37,6 +38,7 @@ class AnnotateImageHydrator implements HydratorInterface
      */
     protected $hydratorClassMap = [
         'logoAnnotations' => SubAnnotationHydrator::class,
+        'objectAnnotations' => SubAnnotationHydrator::class,
         'labelAnnotations' => SubAnnotationHydrator::class,
         'textAnnotations' => SubAnnotationHydrator::class,
         'landmarkAnnotations' => SubAnnotationHydrator::class,
